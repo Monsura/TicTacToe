@@ -4,7 +4,9 @@
 <head>
   <title>Tic Tac Toe</title>
   <link rel="stylesheet" href="tictactoe.css">
+
   <script type="text/javascript" src="tictactoe.js"></script>
+
 </head>
 
 <body>
@@ -18,31 +20,32 @@
       <span class="markLabel">X</span>
       <span class="markLabel">O</span>
       <br/>
-      <div class="times">Won <span class="one_times">0</span> <span class="two_times">0</span> times</div>
-      <div class="times">Lost <span class="one_times">0</span> <span class="two_times">0</span> times</div>
+      <div id="Won" class="times">Won <span id="G" class="one_times">0</span> <span id="R"class="two_times">0</span> times</div>
+      <div id="Lost" class="times">Lost <span id="L1" class="one_times">0</span> <span id="L2" class="two_times">0</span> times</div>
       <br/>
       <div class="statusDiv borderBottom">Game Status</div>
-      <p>New Game</p>
+      <p id='ng'>New Game</p>
+
       <!-- Game Status Messages: Game in progress | Player 1 wins | Player 2 wins -->
-      <button>Restart</button>
+      <button id="restart" onclick="reload()">Restart</button>
     </div>
-    <div class="board">
-      <table class="ticTable">
+    <div id="reloadBoard" class="board" >
+      <table id="table" class="ticTable">
         <tbody>
           <tr>
-            <td id="0" class="borderBottom borderRight"></td>
-            <td id="1" class="borderBottom borderRight"></td>
-            <td id="2" class="borderBottom"></td>
+            <td id="0"  onclick="play(event,this.id)" class="borderBottom borderRight"></td>
+            <td id="1" onclick="play(event,this.id)" class="borderBottom borderRight"></td>
+            <td id="2" onclick="play(event,this.id)" class="borderBottom"></td>
           </tr>
           <tr>
-            <td id="3" class="borderBottom borderRight"></td>
-            <td id="4" class="borderBottom borderRight"></td>
-            <td id="5" class="borderBottom"></td>
+            <td id="3" onclick="play(event,this.id)" class="borderBottom borderRight"></td>
+            <td id="4" onclick="play(event,this.id)"  class="borderBottom borderRight"></td>
+            <td id="5" onclick="play(event,this.id)" class="borderBottom"></td>
           </tr>
           <tr>
-            <td id="6" class="borderRight"></td>
-            <td id="7" class="borderRight"></td>
-            <td id="8"></td>
+            <td id="6" onclick="play(event,this.id)"  class="borderRight"></td>
+            <td id="7" onclick="play(event,this.id)" class="borderRight"></td>
+            <td id="8" onclick="play(event,this.id)" ></td>
           </tr>
         </tbody>
       </table>
