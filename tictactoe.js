@@ -163,16 +163,11 @@ function play(event,clicked_id){
       document.getElementById('ng').innerHTML = 'Payer 2 wins';
     }
 
-//   var x1 = document.getElementById().id;
-//
-//   console.log("YAO");
-// console.log(x1);
-
     if(turn==0){
-//  event.target.style.backgroundColor="red";
+  event.target.style.backgroundColor="magenta";
     }
     if(turn==1){
-//event.target.style.backgroundColor="Green";
+event.target.style.backgroundColor="purple";
     }
     for (var i = 0; i < 9; i++) {
       console.log("state: "+i+state[i]);
@@ -181,7 +176,4 @@ function play(event,clicked_id){
 }
 
 
-// var cell0 = window.document.getElementById("8");
-//
-// cell0.addEventListener('click',play);
 

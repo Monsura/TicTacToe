@@ -9,7 +9,7 @@
 
 .ticTable td:hover {
   background-color: rgba(128, 128, 128, 0.2);
-  text-shadow: 2px 1px 1px white;
+  text-shadow: 2px 1px 1px grey;
 }
 
 .borderBottom {
@@ -56,15 +56,15 @@ hr{
 }
 
 .controls p {
-  color: grey;
+  color: black;
 }
 
 .controls button {
   margin: 25px 15px;
-  color: white;
+  color: purple;
   width: 100px;
   padding: 10px;
-  background-color: rgba(39, 39, 39, 0.74);
+  background-color: black(39, 39, 39, 0.74);
   font-size: 0.8em;
   border-radius: 0.3em;
 }
